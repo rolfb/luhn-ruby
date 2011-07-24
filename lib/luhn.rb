@@ -1,10 +1,10 @@
 class Luhn
 
-  def self.mod10(number) 
+  def self.checksum(number) 
     products = luhn_doubled(number)
     sum = products.inject { |t,p| t + sum_of(p) }
-    mod10 = 10 - (sum % 10)
-    mod10 == 10 ? 0 : mod10
+    checksum = 10 - (sum % 10)
+    checksum == 10 ? 0 : checksum
   end
 
   def self.luhn_doubled(number)
@@ -20,7 +20,7 @@ class Luhn
 
   def self.valid?(number)
     numbers = split_digits(number)
-    numbers.pop == mod10(numbers.join)
+    numbers.pop == checksum(numbers.join)
   end
 
   def self.split_digits(number)

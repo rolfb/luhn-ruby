@@ -14,11 +14,11 @@ describe Luhn do
   end
 
   it "provides a valid control number based on a number" do
-    Luhn.mod10(123).should == 0
-    Luhn.mod10(12345123451234).should == 8
-    Luhn.mod10(4992739871).should == 6
-    Luhn.mod10(23994700000053866078).should == 3
-    Luhn.mod10(199600).should == 8
+    Luhn.checksum(123).should == 0
+    Luhn.checksum(12345123451234).should == 8
+    Luhn.checksum(4992739871).should == 6
+    Luhn.checksum(23994700000053866078).should == 3
+    Luhn.checksum(199600).should == 8
   end
 
   it "validates valid numbers" do
