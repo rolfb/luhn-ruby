@@ -1,4 +1,4 @@
-class Mod10
+class Luhn
 
   def self.mod10(number) 
     products = luhn_doubled(number)
