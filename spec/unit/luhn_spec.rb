@@ -11,6 +11,7 @@ describe Luhn do
   it "doubles numbers according to luhn" do
     Luhn.luhn_doubled(4992739871).should == [4,18,9,4,7,6,9,16,7,2]
     Luhn.luhn_doubled(123).should == [2,2,6]
+    Luhn.luhn_doubled(700).should == [14,0,0]
   end
 
   it "provides a valid control number based on a number" do
@@ -19,6 +20,7 @@ describe Luhn do
     Luhn.checksum(4992739871).should == 6
     Luhn.checksum(23994700000053866078).should == 3
     Luhn.checksum(199600).should == 8
+    Luhn.checksum(700).should == 5
   end
 
   it "validates valid numbers" do
