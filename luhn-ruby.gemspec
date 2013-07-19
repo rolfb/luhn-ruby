@@ -13,5 +13,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "luhn-ruby"
   gem.require_paths = ["lib"]
-  gem.version       = '0.1.0'
+  gem.version       = '1.0.0'
 end
