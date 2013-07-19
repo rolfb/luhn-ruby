@@ -3,6 +3,7 @@
 Gem::Specification.new do |gem|
   gem.authors       = ["Rolf Bjaanes"]
   gem.email         = []
+  gem.license       = 'MIT'
   gem.description   = %q{Very simple library to calculate and validate Luhn numbers}
   gem.summary       = %q{Very simple library to calculate and validate Luhn numbers}
   gem.homepage      = "https://github.com/rolfb/luhn-ruby"
