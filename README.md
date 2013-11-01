@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+require 'luhn'
+
+number = '4111111111111111'
+
+Luhn.valid? number
+# => true
+```
 
 ## Contributing
 
